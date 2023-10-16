@@ -27,8 +27,8 @@
 .logo-name {
     position: relative;
     top: 10px;
-    left: 50px;
-    font-size: 30px;
+    left: 130px;
+    font-size: 52px;
     color: black;
     text-decoration: none;
     font-weight: 700;
@@ -41,7 +41,7 @@ ul, li {
 .btn-head {
     position: relative;
     text-align: center;
-    top: -15px;
+    top: -45px;
     word-spacing: 30px;
 }
 
@@ -50,10 +50,32 @@ ul > li > a {
     color: rgb(255, 255, 255);
 }
 
+.box {
+    position: absolute;
+    width: 418px;
+    height: 162px;
+    left: 100px;
+    top: 550px;
+}
 
+.text-main {
+    position: relative;
+    color: white;
+    font-size: 81px;
+}
 
-
-
+.btn-find {
+    position: relative;
+    color: white;
+    background-color: #15456d;
+    top: 680px;
+    left: 100px;
+    font-size: 30px;
+    height: 55px;
+    width: 220px;
+    border-radius: 100px;
+    border: solid black 0px;
+}
 
 .back-color {
     position: absolute;
@@ -61,4 +83,22 @@ ul > li > a {
     height: 519px;
     width: 1890px;
     top: 985px;
+}
+
+.footer-hi {
+    position: relative;
+    color: #FED097;
+    text-align: center;
+    top: 150px;
+    font-size: 24px;
+}
+
+.footer-text {
+    position: relative;
+    color: rgb(255, 255, 255);
+    width: 750px;
+    text-align: center;
+    left: 575px;
+    top: 200px;
+    font-size: 38px; 
 }
