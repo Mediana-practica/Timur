@@ -1,12 +1,19 @@
-const input = document.querySelector('#input')
-const btn = document.querySelect('#btn')
-const result = document.querySelector('#result')
-const total = document.querySelector('#total')
+const taskInput = document.getElementById("task");
+const addTaskButton = document.getElementById("add");
+const taskList = document.getElementById("taskList");
 
-// add event
+addTaskButton.addEventListener("click", function() {
+    const taskText = taskInput.value;
+    if (taskText) {
+        const listItem = document.createElement("li");
+        listItem.innerText = taskText;
+        taskList.appendChild(listItem);
+        taskInput.value = "";
+    }
+});
 
-btn.addEventListener('click', (e) => {
-    console.log(input.value)
-
-    result.innerHTML += input.value
-})
+taskList.addEventListener("click", function(event) {
+    if (event.target.tagName === "LI") {
+        event.target.remove();
+    }
+});

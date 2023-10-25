@@ -7,24 +7,16 @@
     <link rel="stylesheet" href="./main.css">
     <title>document</title>
 </head>
+
 <body>
-
-    <div class="wrap">
-     <!--<form>-->
-            <input type="text" id="input"/>
-        
-            <button id="btn">добавить список</button>
-        <!--<form/>-->
-        <ul id="result"></ul>
-
-        <div>
-            Количество:
-            <span id="total"></span>
-        </div>
-        
+    <h1>Todo List</h1>
+    <div id="app">
+        <input id="task" type="text" placeholder="Add a new task">
+        <button id="add">Add</button>
+        <ul id="taskList">
+        </ul>
     </div>
-
-
-<script src="./app.js"></script>
+    <script src="./app.js"></script>
 </body>
+
 </html>
